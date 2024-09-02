@@ -20,5 +20,7 @@
 # test_burgers_signout.py - в этом файле находится тест, который проверяет Выход из аккаунта
 #       test_sign_out - проверяет выход из аккаунта
 # test_burgers_constructor_section.py - в этом файле находятся проверки для раздела Конструктор
-#       test_constructor_section - проверяет переходы к разделам Булки, Соусы, Начинки
+#       test_constructor_section_first_tab_click - проверяет переходы к разделу Булки
+#       test_constructor_section_second_tab_click - проверяет переходы к разделу Соусы
+#       test_constructor_section_third_tab_click - проверяет переходы к разделу Начинки
 
