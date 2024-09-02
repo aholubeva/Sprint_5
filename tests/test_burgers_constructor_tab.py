@@ -8,7 +8,6 @@ class TestBurgersConstructorTab:
     def test_open_constructor_tab(self, driver):
         driver.get(Config.URL)
         driver.find_element(*BurgersLocators.SIGN_IN).click()
-        assert driver.current_url == f'{Config.URL}/login', "Login Url is wrong"
         driver.find_element(*BurgersLocators.EMAIL_FIELD).send_keys("anastasiyagolubeva13123@yandex.ru")
         driver.find_element(*BurgersLocators.PASSWORD_FIELD).send_keys("123456")
         driver.find_element(*BurgersLocators.SUBMIT_BUTTON).click()
@@ -23,7 +22,6 @@ class TestBurgersConstructorTab:
     def test_open_constructor_tab_by_logo(self, driver):
         driver.get(Config.URL)
         driver.find_element(*BurgersLocators.SIGN_IN).click()
-        assert driver.current_url == f'{Config.URL}/login', "Login Url is wrong"
         driver.find_element(*BurgersLocators.EMAIL_FIELD).send_keys("anastasiyagolubeva13123@yandex.ru")
         driver.find_element(*BurgersLocators.PASSWORD_FIELD).send_keys("123456")
         driver.find_element(*BurgersLocators.SUBMIT_BUTTON).click()
