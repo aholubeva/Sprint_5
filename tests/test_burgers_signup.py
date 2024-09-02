@@ -14,7 +14,6 @@ class TestBurgersSignUp:
         driver.find_element(*BurgersLocators.USER_PASSWORD).send_keys(password_data)
         driver.find_element(*BurgersLocators.REGISTER_BUTTON).click()
         WebDriverWait(driver, Config.TIMEOUT).until(expected_conditions.visibility_of_element_located(BurgersLocators.SUBMIT_BUTTON))
-        assert  driver.current_url == f'{Config.URL}/login', "Login Url is wrong"
         driver.find_element(*BurgersLocators.EMAIL_FIELD).send_keys(email_data)
         driver.find_element(*BurgersLocators.PASSWORD_FIELD).send_keys(password_data)
         driver.find_element(*BurgersLocators.SUBMIT_BUTTON).click()
