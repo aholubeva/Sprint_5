@@ -18,11 +18,11 @@ class BurgersLocators:
     PROFILE_LINK = By.XPATH, "//a[text()='Профиль']" # Кнопка Личный кабинет в хедере
     CONSTRUCTOR_TAB = By.XPATH, "//p[text()='Конструктор']" # Таба Конструктор в хедере
     CONSTRUCTOR_LOGO = By.XPATH, "//div[contains(@class, 'AppHeader_header__logo')]" # Лого в хедере
-    FIRST_TAB = By.XPATH, "//span[text()='Булки']" # Таба Булки
+    FIRST_TAB = By.XPATH, "//span[text()='Булки']/parent::div" # Таба Булки
     FIRST_TITLE = By.XPATH, "//h2[text()='Булки']" # Заголовок Булки
-    SECOND_TAB = By.XPATH, "//span[text()='Соусы']" # Таба Соусы
+    SECOND_TAB = By.XPATH, "//span[text()='Соусы']/parent::div" # Таба Соусы
     SECOND_TITLE = By.XPATH, "//h2[text()='Соусы']" # Заголовок Соусы
-    THIRD_TAB = By.XPATH, "//span[text()='Начинки']" # Таба Начинки
+    THIRD_TAB = By.XPATH, "//span[text()='Начинки']/parent::div" # Таба Начинки
     THIRD_TITLE = By.XPATH, "//h2[text()='Начинки']" # Заголовок Начинки
 
 
